@@ -114,18 +114,6 @@ app.get('/help/*', (req, res) => {
     })
 })
 
-
-// app.get('/products', (req, res)=>{
-//     if(!req.query.search){
-//         return res.send({
-//             error:'provide search term please'
-//         })
-//     }
-//     console.log(req.query)
-//     res.send({
-//         products:[]
-//     })
-// })
 //error page
 app.get('*', (req, res) => {
     res.render('404', {
